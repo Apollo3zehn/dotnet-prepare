@@ -26,6 +26,7 @@
     <PackageLicenseExpression>$(LICENSE)</PackageLicenseExpression>
     <PackageProjectUrl>$(PROJECT_URL)</PackageProjectUrl>
     <RepositoryUrl>$(REPOSITORY_URL)</RepositoryUrl>
+    <PackageIconUrl>$(ICON_URL)</PackageIconUrl>
   </PropertyGroup>
 
 </Project>

@@ -47,19 +47,27 @@ static void Prepare()
 {
     const string SOLUTION = "solution.json";
     const string VERSION = "version.json";
+    const string ICON = "doc/images/icon.json";
 
     var resourceFolderPath = Path.Combine(Assembly.GetExecutingAssembly().Location, "..", "resources");
 
     if (!File.Exists(SOLUTION))
     {
-        Console.WriteLine($"Create file solution.json");
+        Console.WriteLine($"Create file {SOLUTION}");
         File.Copy(Path.Combine(resourceFolderPath, SOLUTION), SOLUTION);
     }
 
     if (!File.Exists(VERSION))
     {
-        Console.WriteLine($"Create file version.json");
+        Console.WriteLine($"Create file {SOLUTION}");
         File.Copy(Path.Combine(resourceFolderPath, VERSION), VERSION);
+    }
+
+    if (!File.Exists(ICON) && !File.Exists(Path.ChangeExtension(ICON, "png")))
+    {
+        Console.WriteLine($"Create file {ICON}");
+        Directory.CreateDirectory(Path.GetDirectoryName(ICON)!);
+        File.Copy(Path.Combine(resourceFolderPath, ICON), ICON);
     }
 
     foreach (var filePath in Directory.EnumerateFiles(resourceFolderPath, "*.*", SearchOption.AllDirectories))
