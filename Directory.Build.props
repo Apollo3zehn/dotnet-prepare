@@ -1,0 +1,11 @@
+<Project>
+
+  <PropertyGroup>
+    <ArtifactsPath>$([MSBuild]::NormalizePath($(MSBuildThisFileDirectory)artifacts))</ArtifactsPath>
+    <BaseIntermediateOutputPath>$(ArtifactsPath)/obj/$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)</IntermediateOutputPath>
+    <OutputPath>$(ArtifactsPath)/bin/$(MSBuildProjectName)/$(Configuration)</OutputPath>
+    <PackageOutputPath>$(ArtifactsPath)/packages</PackageOutputPath>
+  </PropertyGroup>
+
+</Project>
