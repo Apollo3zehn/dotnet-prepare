@@ -5,12 +5,12 @@ with open("solution.json", "r") as fh:
         
 print(
 f"""
-AUTHORS="{solution_data["authors"]}"
-COMPANY="{solution_data["company"]}"
-PROJECT_COPYRIGHT="{solution_data["copyright"]}"
-PRODUCT="{solution_data["product"]}"
-LICENSE="{solution_data["license"]}"
-PROJECT_URL="{solution_data["project-url"]}"
-REPOSITORY_URL="{solution_data["repository-url"]}"
-ICON_URL="{solution_data["icon-url"]}"
+AUTHORS={solution_data["authors"]}
+COMPANY={solution_data["company"]}
+COPYRIGHT={solution_data["copyright"]}
+PRODUCT={solution_data["product"]}
+PACKAGELICENSEEXPRESSION={solution_data["license"]}
+PACKAGEPROJECTURL={solution_data["project-url"]}
+REPOSITORYURL={solution_data["repository-url"]}
+PACKAGEICONURL={solution_data["icon-url"]}
 """)
