@@ -4,6 +4,7 @@
     "copyright": "example",
     "product": "example",
     "license": "example",
-    "project-url": "https://malstroem-labs.github.io/example",
-    "repository-url": "https://github.com/malstroem-labs/example"
+    "project-url": "https://example.github.io/example",
+    "repository-url": "https://github.com/example/example",
+    "icon-url": "https://raw.githubusercontent.com/example/example/master/doc/images/icon.svg"
 }
