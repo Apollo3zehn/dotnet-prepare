@@ -47,7 +47,7 @@ static void Prepare()
 {
     const string SOLUTION = "solution.json";
     const string VERSION = "version.json";
-    const string ICON = "doc/images/icon.json";
+    const string ICON = "doc/images/icon.svg";
 
     var resourceFolderPath = Path.Combine(Assembly.GetExecutingAssembly().Location, "..", "resources");
 
