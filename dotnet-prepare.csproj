@@ -4,8 +4,13 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="resources/**/*" CopyToOutputDirectory="Always" Pack="false" />
+  </ItemGroup>
 
 </Project>
