@@ -5,6 +5,5 @@
     "product": "example",
     "license": "example",
     "project-url": "https://example.github.io/example",
-    "repository-url": "https://github.com/example/example",
-    "icon-url": "https://raw.githubusercontent.com/example/example/master/doc/images/icon.svg"
+    "repository-url": "https://github.com/example/example"
 }
