@@ -47,6 +47,7 @@ static void Prepare()
 {
     const string SOLUTION = "solution.json";
     const string VERSION = "version.json";
+    const string CHANGELOG = "CHANGELOG.md";
 
     var resourceFolderPath = Path.Combine(Assembly.GetExecutingAssembly().Location, "..", "resources");
 
@@ -60,6 +61,12 @@ static void Prepare()
     {
         Console.WriteLine($"Create file {SOLUTION}");
         File.Copy(Path.Combine(resourceFolderPath, VERSION), VERSION);
+    }
+
+    if (!File.Exists(CHANGELOG))
+    {
+        Console.WriteLine($"Create file {CHANGELOG}");
+        File.Copy(Path.Combine(resourceFolderPath, CHANGELOG), CHANGELOG);
     }
 
     foreach (var filePath in Directory.EnumerateFiles(resourceFolderPath, "*.*", SearchOption.AllDirectories))
