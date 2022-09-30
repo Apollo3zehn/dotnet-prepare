@@ -71,7 +71,7 @@ static void Prepare()
 
     foreach (var filePath in Directory.EnumerateFiles(resourceFolderPath, "*.*", SearchOption.AllDirectories))
     {
-        if (filePath.EndsWith(SOLUTION) || filePath.EndsWith(VERSION))
+        if (filePath.EndsWith(SOLUTION) || filePath.EndsWith(VERSION) || filePath.EndsWith(CHANGELOG))
             continue;
 
         var targetFilePath = filePath[(resourceFolderPath.Length + 1)..];
